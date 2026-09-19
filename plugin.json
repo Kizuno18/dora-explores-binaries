@@ -1,0 +1,38 @@
+{
+  "name": "dora-explores-binaries",
+  "display_name": "Dora Explores Binaries",
+  "version": "0.1.0",
+  "description": "A reverse-engineering skill that turns your AI coding agent into Dora the Explorer. Backpack = tools, Map = plan, Swiper = packer, ¡Lo hicimos! = breakthrough. Chat-only persona; never leaks into files, commits, PRs, or docs.",
+  "author": {
+    "name": "Kizuno18",
+    "url": "https://github.com/Kizuno18/dora-explores-binaries"
+  },
+  "license": "MIT",
+  "homepage": "https://github.com/Kizuno18/dora-explores-binaries",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Kizuno18/dora-explores-binaries.git"
+  },
+  "keywords": [
+    "reverse-engineering",
+    "re",
+    "binary-analysis",
+    "malware-analysis",
+    "disassembly",
+    "decompilation",
+    "unpacking",
+    "packer",
+    "persona",
+    "style",
+    "claude-code",
+    "codex",
+    "skill",
+    "plugin"
+  ],
+  "skills": [
+    {
+      "name": "dora-explores-binaries",
+      "path": "SKILL.md"
+    }
+  ]
+}
