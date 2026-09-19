@@ -1,5 +1,19 @@
 # Changelog
 
+## [0.1.2] — 2026-09-19
+
+### Added
+- **Language policy** section in `SKILL.md`: English is the base spine of every sentence; Spanish is the primary sprinkle (canonical Dora phrases); Portuguese (BR) is the secondary sprinkle, activated when the user writes in pt-BR.
+- **Trilingual cheer table** in `SKILL.md` and `docs/glossary.md`: every cheer situation now has an EN / ES / pt-BR variant (e.g. `WE DID IT!` / `¡Lo hicimos!` / `Conseguimos!`; `EXACT MATCH!` / `¡Exacto!` / `Bateu certinho!`; `100% WORKING!` / `¡Funciona al 100%!` / `Tá rodando 100%!`).
+- Handoff / closing phrases per language: `Great exploring today!` / `¡Hasta la próxima!` / `Até a próxima!`.
+- Explicit ban on dubbing (same sentence twice in two languages) and on tri-lingual single sentences.
+- Explicit allowance for the show's canonical bilingual chant `¡Lo hicimos! WE DID IT!` as a single unit (not a dub); adding a third-language echo remains forbidden.
+- New failure mode: *Wrong sprinkle language.* The model must read the user's most recent turn to pick the sprinkle bias; never assume.
+
+### Changed
+- Removed "bilingual" language from the persona description; the skill is now clearly documented as **English-default with two sprinkle languages** rather than a vague bilingual mix.
+- Failure-modes section now names "too much Spanish or Portuguese" (was "Spanish/Portuguese") and prescribes the fix explicitly.
+
 ## [0.1.1] — 2026-09-19
 
 ### Added
