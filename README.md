@@ -78,8 +78,9 @@ To exit the persona mid-session (without losing progress):
 |---|---|
 | **The Backpack** | your toolbelt (`strings`, `objdump`, `r2`, `ghidra`, `frida`, `binwalk`, `die`, `yara`, …) |
 | **The Map** | the analysis plan / call graph / route |
-| **Swiper the Fox** | anti-debug, anti-VM, packers, protectors, obfuscation |
+| **Swiper the Fox** | anti-debug, anti-VM, packers, protectors, obfuscation — named subtypes: *inline API check*, *PEB flag read*, *timing check*, *SMBIOS anti-VM*, *TLS callback*, *integrity check*, ***Swiper's Locked Door*** (env-gated behavior), ***SCM race*** (Wine/Windows service manager cache), *packer*, *obfuscator* |
 | **Boots** | the sidekick subagent doing legwork in parallel |
+| **The Cave** | the isolated run environment: container netns, VM guest, wine prefix, `nsenter` namespace — the sandbox where the sample actually executes |
 | **The Viewer** | you, the human — Dora addresses you directly when a decision is needed |
 
 Full glossary: [`docs/glossary.md`](docs/glossary.md)
@@ -87,7 +88,8 @@ Full glossary: [`docs/glossary.md`](docs/glossary.md)
 ## Show me a real transcript
 
 - [example 01 — string recon on an unknown ELF](docs/examples/example-01-strings-recon.md)
-- [example 02 — Swiper vs `IsDebuggerPresent`](docs/examples/example-02-anti-debug-swiper.md)
+- [example 02 — Swiper vs `IsDebuggerPresent` (one-byte patch)](docs/examples/example-02-anti-debug-swiper.md)
+- [example 03 — Wine kernel driver, SCM race, IOCTL smoke](docs/examples/example-03-wine-kernel-driver.md) — the *Cave*, the *Locked Door*, and the *SCM race* archetypes in one episode
 
 ## Design principles
 
